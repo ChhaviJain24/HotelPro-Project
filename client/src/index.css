@@ -1,0 +1,23 @@
+:root { --ink: #12263A; --sea: #1F7A6E; --brass: #B8860B; }
+body { font-family: 'Source Sans 3', system-ui, sans-serif; background: var(--bs-tertiary-bg); }
+h1, h2, h3, h4, h5, .brand { font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; }
+.navbar-hp { background: var(--ink); }
+.navbar-hp .nav-link { color: #cfdbe4; border-bottom: 2px solid transparent; }
+.navbar-hp .nav-link.active, .navbar-hp .nav-link:hover { color: #fff; border-color: var(--brass); }
+.btn-primary { --bs-btn-bg: var(--sea); --bs-btn-border-color: var(--sea); --bs-btn-hover-bg: #176157; --bs-btn-hover-border-color: var(--sea); --bs-btn-active-bg: #176157; }
+.btn-accent { background: var(--brass); color: #111; border: 0; }
+.hero { background: var(--ink); color: #fff; padding: 56px 0 96px; }
+.hero h1 { font-size: clamp(2rem, 5.5vw, 3.6rem); max-width: 14em; }
+.search-card { margin-top: -56px; box-shadow: 0 8px 30px #0003; }
+.room-pic { height: 170px; background-size: cover; background-position: center; color: #fff; font: 800 1.8rem 'Bricolage Grotesque'; display: flex; align-items: flex-end; padding: 10px; }
+.stat b { font: 800 2rem 'Bricolage Grotesque'; display: block; }
+.table-wrap { overflow-x: auto; }
+:focus-visible { outline: 3px solid var(--brass); outline-offset: 2px; }
+@media print { .no-print, nav { display: none !important; } .modal { position: static !important; } .modal-backdrop { display: none !important; } }
+
+.cat-tile { display: flex; align-items: flex-end; height: 190px; border-radius: 10px; overflow: hidden; background-size: cover; background-position: center; color: #fff; text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.cat-tile:hover { transform: translateY(-3px); box-shadow: 0 8px 20px #0003; color: #fff; }
+.cat-tile span { display: block; width: 100%; padding: 12px 14px; background: linear-gradient(transparent, rgba(0,0,0,.75)); }
+.cat-tile b { font: 800 1.2rem 'Bricolage Grotesque', sans-serif; display: block; }
+.cat-tile small { opacity: .9; }
+@media (prefers-reduced-motion: reduce) { .cat-tile { transition: none; } }
